@@ -1,0 +1,50 @@
+
+.circleDiv{
+    background-color: #282a36;
+    padding: 50px;
+    border-radius: 40%;
+    border: 2vw solid #bd93f9;
+    height: 20vw;
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img{
+    width: 30vw;
+    height: 35vw;
+    padding-top: -20vw;
+    margin-top: -5vw;
+    border-left: 0.3vw solid #bd93f900;
+    border-right: 0.3vw solid #bd93f900 ;
+    border-bottom: 0.3vw solid #bd93f900;
+    border-radius: 20%;	
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+
+}
+@media screen and (max-width: 1500px) {
+    .img{
+    width: 40vw;
+    height: 40vw;
+    margin-top: -9vw;
+    }
+}
+@media screen and (max-width: 768px) {
+    .img{
+    width: 40vw;
+    height: 45vw;
+    margin-top: -7vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .img{
+    width: 60vw;
+    height: 65vw;
+    margin-top: -15vw;
+    }
+}
+
+    

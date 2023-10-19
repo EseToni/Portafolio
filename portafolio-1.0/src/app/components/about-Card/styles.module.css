@@ -1,0 +1,65 @@
+.container {
+	border: 3px solid #50fa7b;
+	border-radius: 6px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 23vw;
+	height: 21vw;
+    margin: 30px 35px;
+    cursor: pointer;
+	transform-style: preserve-3d;
+	transition: transform 0.3s ease-in-out;
+}
+.containerRotate{
+	transform: rotateY(180deg);
+}
+.containerActive {
+    border-color: #bd93f9;
+    scale: 1.2;
+}
+.icon {
+	font-size: 7vw;
+    color: white
+}
+
+.content{
+    padding-inline: 20px;
+	font-size: 1.25vw;
+	transform: rotateY(180deg);
+}
+
+.img{
+	margin: 1.5vw;
+	margin-bottom: 0.8vw;
+	width: 15vw;
+	height: 11vw;
+}
+.name{
+	font-size: 1.3vw;
+	margin-top: 12px;
+}
+@media screen and (max-width:  768px) {
+	.container{
+		width: 30vw;
+		height: 26vw;
+		margin: 10px 10px;
+		border-width: 1.5px;
+	}
+	.type{
+		font-size: 3vw;
+		padding-top: 15px;
+	}
+	.img{
+		width: 18vw;
+		height: 14vw;
+	}
+	.content{
+		font-size: 1.7vw;
+	}
+	.name{
+		font-size: 2vw;
+		margin-top: 5px;
+	}
+}

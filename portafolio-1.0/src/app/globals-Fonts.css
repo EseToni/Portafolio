@@ -1,0 +1,71 @@
+@font-face {
+	font-family: 'Victor Mono SemiBold';
+	src: url('../../fonts/victorMono/VictorMono-SemiBold.woff') format('woff');
+}
+@font-face {
+	font-family: 'Victor Mono Bold';
+	src: url('../../fonts/victorMono/VictorMono-Bold.woff') format('woff');
+}
+@font-face {
+	font-family: 'Victor Mono Medium';
+	src: url('../../fonts/victorMono/VictorMono-Medium.woff') format('woff');
+}
+@font-face {
+	font-family: 'Victor Mono Regular';
+	src: url('../../fonts/victorMono/VictorMono-ExtraLight.woff')
+		format('woff');
+}
+
+@font-face {
+	font-family: 'Victor Mono Light';
+	src: url('../../fonts/victorMono/VictorMono-Light.woff')
+		format('woff');
+}
+
+h1 {
+	font-family: 'Victor Mono SemiBold', monospace;
+	color: #ffff;
+	font-size: 48px;
+}
+h2 {
+	font-family: 'Victor Mono Medium', monospace;
+	color: #ffff;
+	font-size: 3vw;
+}
+h3 {
+	font-family: 'Victor Mono Bold', monospace;
+	color: #ffff;
+	font-size: 2vw;
+	margin:0px;
+}
+h4 {
+	font-family: 'Victor Mono Regular', monospace;
+	color: #ffff;
+	font-size: 1vw;
+}
+h1 span{
+	font-family: 'Victor Mono SemiBold', monospace;
+	color: #ffff;
+	font-size: 5vw;
+}
+.h2Light {
+	font-family: 'Victor Mono Light',monospace;
+	color: #ffff;
+	font-size: 3vw;
+}
+.h4Light {
+	font-family: 'Victor Mono Light',monospace;
+	color: #ffff;
+	font-size: 1.2vw;
+	margin: 15px;
+}
+.liLight {
+	font-family: 'Victor Mono Light',monospace;
+	color: #ffff;
+	font-size: 1.2vw;
+}
+/* Negro (#282a36): Fondo principal y fondo oscuro.
+Morado (#bd93f9): Resaltado principal y acentos.
+Verde (#50fa7b): Para resaltados y acentos adicionales.
+Amarillo (#f1fa8c): Se utiliza para resaltar texto o elementos importantes.
+Gris oscuro (#44475a): Se utiliza para áreas secundarias o bordes */

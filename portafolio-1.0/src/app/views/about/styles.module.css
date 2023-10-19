@@ -1,0 +1,26 @@
+
+.containerAbout{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.containerCard {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px
+}
+
+@media (max-width: 768px) {
+    .containerCard {
+        flex-direction: column;
+        padding: 2px;
+        margin: 10px;
+    }
+    .containerAbout {
+        margin-bottom: 0px;
+    }
+}

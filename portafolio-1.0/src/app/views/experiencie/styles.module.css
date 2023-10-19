@@ -1,0 +1,63 @@
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.containerGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.line {
+    position: absolute;
+    justify-self: center;
+    height: 65vw;
+    border-inline: 4px solid #bd93f9;
+    border-radius: 5px;
+    width: 0px;
+}
+
+    
+.timeCircle {
+    position: relative;
+    justify-self: center;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 2.5vw;
+    margin-bottom: 19vw;
+    block-size: 2vw;
+    inline-size: 2vw;
+    background-color: #282a36;
+    border: 4px solid #bd93f9;
+    border-radius: 50%;
+}
+
+.itemCard{
+    position: absolute;
+    display: grid;
+    justify-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .containerGrid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr ;
+    }
+    .line {
+        border-inline: 1px solid #bd93f9;
+        position: absolute;
+        justify-self: flex-start;
+        height: 105vw;
+        border-inline: 4px solid #bd93f9;
+        border-radius: 5px;
+        width: 0px;
+    }
+    .divEmpty{
+        display: none;
+    }
+    .timeCircle{
+        margin-top: 3.2vw;
+        margin-bottom: 31.5vw;
+    }
+}

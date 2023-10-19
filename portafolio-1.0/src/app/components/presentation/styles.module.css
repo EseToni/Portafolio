@@ -1,0 +1,26 @@
+.h2Name {
+	margin-top: -25px;
+}
+.apellido {
+	margin-left: 10vw;
+}
+@media screen and (max-width: 768px) {
+	.h1Name {
+		margin: 5px;
+		padding: 0px;
+	}
+	.h2Name {
+		margin: 5px;
+		padding: 0px;
+		margin-bottom: 20px;
+		position: relative;
+		z-index: 1;
+        text-shadow: 2px 2px 4px black;
+	}
+	.br {
+		display: none;
+	}
+	.apellido {
+		margin-left: 2vw;
+	}
+}

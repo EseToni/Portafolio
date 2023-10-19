@@ -1,0 +1,40 @@
+.body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 100px 100px; /* Dos columnas para los cuadrados */
+  grid-template-rows: 100px 100px; /* Dos filas para los cuadrados */
+  column-gap: 50px;
+  row-gap: 80px;
+  align-items: flex-start;
+}
+
+.verticalLine {
+  position: absolute;
+  align-self: center;
+  justify-self: center;
+  border-left: 2px solid #000;
+  height: 500px; /* Cambié la altura a 100% para cubrir toda la altura de la cuadrícula */
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #3498db;
+}
+
+
+
+
+  /* Negro (#282a36): Fondo principal y fondo oscuro.
+Morado (#bd93f9): Resaltado principal y acentos.
+Verde (#50fa7b): Para resaltados y acentos adicionales.
+Amarillo (#f1fa8c): Se utiliza para resaltar texto o elementos importantes.
+Gris oscuro (#44475a): Se utiliza para áreas secundarias o bordes */
