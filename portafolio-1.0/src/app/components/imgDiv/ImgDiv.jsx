@@ -4,7 +4,7 @@ import styles from "./styles.module.css"
 const ImgDiv = () => {
   return (
     <div className={styles.circleDiv}>
-      <img src='/fotoperfil/FotoPerfilNoFondo.png' alt="Foto de perfil" className={styles.img} />
+      <img src='/fotoperfil/foto.png' alt="Foto de perfil" className={styles.img} />
     </div>
   )
 }
