@@ -4,19 +4,24 @@ import ExperiencieCard from '../../components/experiencie-Card/ExperiencieCard';
 import { useState, useEffect } from 'react';
 
 const Experiencie = () => {
-	const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+	const [isMobile, setIsMobile] = useState(false);
 	const [left, setLeft] = useState(true); // Set window width to state
 
 	useEffect(() => {
 		const handleResize = () => {
 			setIsMobile(window.innerWidth < 768); // Set window width to state
 		};
-		window.addEventListener('resize', handleResize); // Add event listener on resize
+		if (typeof window !== 'undefined') {
+			setIsMobile(window.innerWidth < 768);
+			window.addEventListener('resize', handleResize); // Add event listener on resize
+		}
 		if (isMobile) {
 			setLeft(false);
 		}
 		return () => {
-			window.removeEventListener('resize', handleResize); // Remove event listener on cleanup
+			if(typeof window !== 'undefined'){
+				window.removeEventListener('resize', handleResize); // Remove event listener on cleanup
+			}
 		};
 		
 	}, [isMobile]);

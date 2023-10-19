@@ -10,15 +10,20 @@ import { BsRocketTakeoff } from 'react-icons/bs';
 import { useState, useEffect } from 'react';
 
 const Inicio = () => {
-	const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+	const [isMobile, setIsMobile] = useState(false);
 
 	useEffect(() => {
 		const handleResize = () => {
 			setIsMobile(window.innerWidth < 768); // Set window width to state
 		};
-		window.addEventListener('resize', handleResize); // Add event listener on resize
+		if(typeof window !== 'undefined'){
+			setIsMobile(window.innerWidth < 768);
+			window.addEventListener('resize', handleResize); // Add event listener on resize
+		}
 		return () => {
-			window.removeEventListener('resize', handleResize); // Remove event listener on cleanup
+			if(typeof window !== 'undefined'){
+				window.removeEventListener('resize', handleResize); // Remove event listener on cleanup
+			}
 		};
 	}, [isMobile]);
 
