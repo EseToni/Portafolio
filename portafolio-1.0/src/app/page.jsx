@@ -4,7 +4,7 @@ import React from 'react';
 import About from './views/about/about';
 import Skills from './views/skills/Skills';
 import Experiencie from './views/experiencie/Experiencie';
-import Inicio from './views/inicio/inicio';
+import Inicio from './views/inicio/Inicio';
 import Contact from './views/contact/Contact';
 
 const page = () => {
