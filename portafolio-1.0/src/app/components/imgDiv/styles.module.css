@@ -40,9 +40,14 @@
 }
 
 @media screen and (max-width: 480px) {
+    .circleDiv{
+        margin-top: 10vw;
+        height: 30vw;
+        width: 30vw;
+    }
     .img{
-    width: 60vw;
-    height: 65vw;
+    width: 70vw;
+    height: 75vw;
     margin-top: -15vw;
     }
 }

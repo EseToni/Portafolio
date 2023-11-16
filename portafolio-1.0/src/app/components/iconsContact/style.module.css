@@ -3,24 +3,22 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 13px;
+    padding: 1vw;
 }
 .containerContact {
     cursor: pointer;
     display: flex;
     flex-direction: row;
     align-items: center;
-    border:3px #44475a solid;
-    border-radius: 4px;
-    height: 30px;
-    padding: 16px 6px;
-    margin: 10px;
+    border:0.3vw #44475a solid;
+    border-radius: 0.5vw;
+    padding: 0vw 2vw;
+    margin: 1vw;
     background: radial-gradient(ellipse at 50% 50%, #282a36 , #44475a );
 }
 .icon{
     cursor: pointer;
-    padding: 8px;
     font-size: 2.5vw;
     color: #bd93f9;
-    margin: 4px;
+    margin: 0.5vw 1vw;
 }

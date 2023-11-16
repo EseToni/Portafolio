@@ -11,6 +11,7 @@
     cursor: pointer;
 	transform-style: preserve-3d;
 	transition: transform 0.3s ease-in-out;
+	background: radial-gradient(circle at 50% 50%,#44475a  0%, #282a36 80%)
 }
 .containerRotate{
 	transform: rotateY(180deg);
@@ -42,10 +43,11 @@
 }
 @media screen and (max-width:  768px) {
 	.container{
-		width: 30vw;
-		height: 26vw;
+		width: 40vw;
+		height: 30vw;
 		margin: 10px 10px;
 		border-width: 1.5px;
+		
 	}
 	.type{
 		font-size: 3vw;

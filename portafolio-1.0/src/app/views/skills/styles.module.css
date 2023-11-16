@@ -12,18 +12,14 @@
     position: relative;
     display: flex;
     flex-direction: row;
+    
   }
   
   .containerCard {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    max-height: 30vw;
-    padding: 2vw;
-    align-items: center; 
-    justify-content: center;
-    justify-items: center;
-    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+    margin: 0vw 2vw;
   }
   .card {
     margin: 8px 14px;
@@ -41,19 +37,11 @@
   }
   @media screen and (max-width: 1150px) {
     .containerCards {
-      flex-direction: column;
-    }
-    .containerCard {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      max-height: 55vw;
-      padding: 2vw;
-
+      flex-direction: row;
     }
     .card{
-        width: 10vw;
-        height: 10vw;
+        width: 5vw;
+        height: 5vw;
         border-radius: 10px;
     }
   }
@@ -87,6 +75,10 @@
   @media screen and (max-width: 500px) {
     .containerCards{
       position: relative;
+      right: 19.5%;
+    }
+    .container h2 {
+      font-size: 7vw;
     }
   }
     

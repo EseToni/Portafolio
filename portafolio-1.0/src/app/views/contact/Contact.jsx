@@ -18,7 +18,7 @@ const Contact = () => {
 	}
 	return (
 		<div className={styles.container}>
-			<h1 style={{color : '#bd93f9', fontSize: '3.5vw'}} id='contact'>INTERESTING IN WORKING <span style={{fontSize: '3.5vw'}}>TOGETHER</span>?</h1>
+			<h1 style={{color : '#bd93f9'}} id='contact'>INTERESTING IN WORKING <span>TOGETHER</span>?</h1>
             <form className={styles.containerForm} action="https://formspree.io/f/mleyaagy" method="POST">
                 <input className={styles.inputs} placeholder='How can i tell you?' type='text' id='name' name='name'/>
                 <input className={styles.inputs} placeholder='Your email address?' type='email' id='email' name='email'/>

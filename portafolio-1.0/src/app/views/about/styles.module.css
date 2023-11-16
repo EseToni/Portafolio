@@ -23,4 +23,7 @@
     .containerAbout {
         margin-bottom: 0px;
     }
+    .containerAbout h2{
+        font-size: 7vw;
+    }
 }

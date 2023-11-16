@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
 				<link rel='icon' href='/fotoperfil/favicon.ico' sizes='48x48' />
 				<meta
 					name='viewport'
-					content='width=device-width, initial-scale=1.0'
+					content='width=device-width, initial-scale=1.0 user-scalable=no'
 				></meta>
 			</head>
 			<body>{children}</body>

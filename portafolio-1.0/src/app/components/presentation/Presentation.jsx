@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './styles.module.css'
 const Presentation = () => {
 	return (
-		<div >
+		<div className={styles.container}>
 			<h2 style={{marginBottom: "-30px"}}>Hello, I am</h2>
 			<h1 className={styles.h1Name}>
 				<span style={{ color: '#bd93f9' }}>{'<'}</span>

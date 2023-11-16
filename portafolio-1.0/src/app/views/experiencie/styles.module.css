@@ -44,6 +44,9 @@
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr ;
     }
+    .container h2{
+        font-size: 7vw;
+    }
     .line {
         border-inline: 1px solid #bd93f9;
         position: absolute;
