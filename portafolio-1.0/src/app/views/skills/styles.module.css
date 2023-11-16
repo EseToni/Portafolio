@@ -4,14 +4,14 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    align-content: center;
+    align-items: center;
+    text-align: center;
   } 
   
   .containerCards {
+    position: relative;
     display: flex;
     flex-direction: row;
-    align-self: center;
-    align-items: center;
   }
   
   .containerCard {
@@ -20,6 +20,10 @@
     flex-wrap: wrap;
     max-height: 30vw;
     padding: 2vw;
+    align-items: center; 
+    justify-content: center;
+    justify-items: center;
+    margin: 0 auto;
   }
   .card {
     margin: 8px 14px;
@@ -32,21 +36,20 @@
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.639);
     transition: transform 0.3s ease-in-out;
   }
+  .card:hover {
+    transform: scale(1.05);
+  }
   @media screen and (max-width: 1150px) {
     .containerCards {
       flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      justify-items: center;
     }
-  
     .containerCard {
-      /* Mueve las reglas de .containerCard aquí para que se apliquen solo en dispositivos pequeños */
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
       max-height: 55vw;
       padding: 2vw;
+
     }
     .card{
         width: 10vw;
@@ -55,11 +58,13 @@
     }
   }
   @media screen and (max-width: 768px) {
-    .containerCards {
-      flex-direction: column;
+    .container{
       align-items: center;
-      justify-content: center;
-      justify-items: center;
+      align-content: center;
+    }
+    .containerCards {
+      display: flex;
+      flex-direction: column;
     }
   
     .containerCard {
@@ -67,6 +72,9 @@
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      justify-items: center;
       max-height: 55vw;
       padding: 2vw;
     }
@@ -76,10 +84,13 @@
         border-radius: 10px;
     }
   }
-  
+  @media screen and (max-width: 500px) {
+    .containerCards{
+      position: relative;
+    }
+  }
+    
 
   
-  .card:hover {
-    transform: scale(1.05);
-  }
+
   
