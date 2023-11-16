@@ -36,6 +36,14 @@ const NavMobile = () => {
 					</h2>
 					<h2
 						className={`${styles.item} ${
+							activeItem === 'Projects' && styles.itemActive
+						}`}
+						onClick={() => handleClickElement('Projects')}
+					>
+						Projects
+					</h2>
+					<h2
+						className={`${styles.item} ${
 							activeItem === 'Skills' && styles.itemActive
 						}`}
 						onClick={() => handleClickElement('Skills')}

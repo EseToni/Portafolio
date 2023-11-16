@@ -1,0 +1,51 @@
+.container{
+    margin-top: 2vw;
+}
+
+.containerCards{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.containerPages{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 3vw 0vw;
+}
+
+.page{
+    height: 2vw;
+    width: 3vw;
+    margin: 0vw 0.5vw;
+    border-radius: 0.5vw;
+    outline: none;
+    border: none;
+    background: radial-gradient(circle at 50% 50%,#44475a  100%, #282a36 80%);
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.pageActive{
+    cursor: auto;
+    height: 3vw;
+    width: 3vw;
+    background: #50fa7b;
+    transition: all 0.5s ease;
+    box-shadow: 0vw 0vw 1vw 0vw #bd93f976;
+}
+
+@media screen and (max-width:768px) {
+    .page {
+        height: 4vw;
+        width: 5vw;
+    }
+    .pageActive{
+        height: 5vw;
+    }
+    .containerCards{
+        flex-direction: row;
+    }
+}

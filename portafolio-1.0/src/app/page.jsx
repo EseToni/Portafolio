@@ -7,6 +7,7 @@ import Experiencie from './views/experiencie/Experiencie';
 import Inicio from './views/inicio/Inicio';
 import Contact from './views/contact/Contact';
 import NavMobile from './components/nav-mobile/NavMobile';
+import Projects  from './views/projects/Projects';
 import useIsMobile from '@/hooks/useIsMobile';
 const page = () => {
 	const isMobile = useIsMobile();
@@ -14,6 +15,7 @@ const page = () => {
 		<>
 			{isMobile&&<NavMobile />}
 			<Inicio isMobile={isMobile} />
+			<Projects />
 			<About />
 			<Skills />
 			<Experiencie />
